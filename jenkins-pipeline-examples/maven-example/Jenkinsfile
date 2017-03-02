@@ -1,7 +1,7 @@
 node {
     def server = Artifactory.newServer url: SERVER_URL, credentialsId: CREDENTIALS
     def rtMaven = Artifactory.newMavenBuild()
-
+//let's see if we can push something
     stage 'Build'
         git url: 'https://github.com/jfrogdev/project-examples.git'
 
